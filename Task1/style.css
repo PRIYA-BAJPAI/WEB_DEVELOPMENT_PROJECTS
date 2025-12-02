@@ -1,0 +1,56 @@
+body{
+    background-color: #0d5f5f;
+}
+
+form{
+    background-color: #5bcfcf;
+    padding: 20px;
+    border-radius: 10px;
+    width:max-content;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.578);
+
+}
+h1{
+    font-family: cursive;
+}
+#Box1{
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-family: cursive;
+    /* font-weight: bold; */
+}
+#Box2{
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-family: cursive;
+
+}
+#Box3{
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-family: cursive;
+
+}
+.Box{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #0d5f5f;
+    color: white;
+    font-family: cursive;
+    cursor: pointer;
+   
+}

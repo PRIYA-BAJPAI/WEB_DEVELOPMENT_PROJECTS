@@ -1,0 +1,45 @@
+                 <!-- Task 1: Color Box Clicker  -->
+<!-- The Scenario: Click boxes to change their colors in a fixed cycle and track total and individual 
+clicks. 
+Requirements: 
+1. Three Colored Boxes: Display 3 boxes (divs) with initial background colors: red, blue, 
+and green. 
+2. Click to Change Color (Cycle): 
+○ Clicking the red box makes it blue. 
+○ Clicking the blue box makes it green. 
+○ Clicking the green box makes it red. 
+3. Individual Click Counter: Show "Box N clicks: X" below each box (starting count at 0). 
+4. Total Clicks Display: Display "Total clicks: X" at the top of the interface. 
+5. Reset Button: Resets all boxes to original colors and all counters (individual and total) 
+back to 0. 
+Concepts Tested: Click events, updating styles, basic counting, multiple element tracking. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Box Clicker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form>
+    <h1 id="totalClicks">Total clicks: 0</h1>
+    <div class="Box">
+        <div id="Box1">
+            <p id="count1">Box1 count : 0</p>
+        </div>
+        <div id="Box2">
+            <p id="count2">Box2 count : 0</p>
+        </div>
+        <div id="Box3">
+            <p id="count3">Box3 count : 0</p>
+        </div>
+    </div>
+    <button id="reset">Reset</button>
+</form>
+    <script src="java.js"></script>
+</body>
+</html>
