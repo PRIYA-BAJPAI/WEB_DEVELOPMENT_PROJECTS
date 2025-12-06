@@ -23,7 +23,7 @@ updating multiple displays, clipboard access. -->
 <body>
     <div class="container">
         <h1><U>Text Input Display</U></h1>
-        <input id="input" type="text" placeholder="Type something...">
+        <input id="input" type="text" placeholder="Type something..." oninput="display()"> <!-- oninput is required to call the display function when we start typing -->
         <div class="display">
             Exact:
             <div id="exact"></div>
