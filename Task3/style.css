@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(78, 109, 110);
+}
+.container{
+    background-color: rgb(112, 185, 157);
+    margin: auto;
+    width: max-content;
+    padding:20px 50px;
+    border: 2px solid rgb(63, 63, 63);
+    box-shadow: 5px 5px 15px rgb(34, 34, 34);
+    font-family: cursive;
+    /* text-align: center; */
+}
+h1{
+    text-align: center;
+    color: rgb(27, 45, 100);
+}
+#input{
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 16px;
+    width: 250px;
+}
+.display{
+    margin: 10px;
+    font-size: 18px;
+    min-height: 30px;
+    width: 220px;
+}
