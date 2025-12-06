@@ -1,0 +1,43 @@
+<!-- Task 3: Text Input Display 
+The Scenario: Mirror what the user types in real-time with different text transformations. 
+Requirements: 
+1. Text Input: One input field with placeholder "Type something...". 
+2. Live Displays: 
+○ Show text exactly as typed. 
+○ Show text in UPPERCASE. 
+○ Show text in lowercase. 
+3. Character Count: Show "Characters: X". 
+4. Clear Button: Empties input and all displays. 
+5. Copy Button: Copies the UPPERCASE version (show "Copied!" for 2 seconds). 
+Concepts Tested: Input events, string methods (toUpperCase, toLowerCase, length), 
+updating multiple displays, clipboard access. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Input Display</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Input Display</h1>
+        <input id="input" type="text" placeholder="Type something...">
+        <div class="display">
+            Exact:
+            <div id="exact"></div>
+            UPPERCASE:
+            <div id="uppercase"></div>
+            lowercase:
+            <div id="lowercase"></div>
+            Characters:
+            <div id="count"></div>
+        </div>
+        <button id="clrbtn">Clear</button>
+        <button id="copybtn">Copy uppercase</button>
+        <div id="copied"></div>
+    </div>
+    <script src="./java.js"></script>
+</body>
+</html>
