@@ -25,17 +25,21 @@ updating multiple displays, clipboard access. -->
         <h1><U>Text Input Display</U></h1>
         <input id="input" type="text" placeholder="Type something..." oninput="display()"> <!-- oninput is required to call the display function when we start typing -->
         <div class="display">
-            Exact:
+            <U style="color:  rgb(27, 45, 100);
+    font-weight: bold;">Exact:</U> 
             <div id="exact"></div>
-            UPPERCASE:
+            <U style="color:  rgb(27, 45, 100);
+    font-weight: bold;">UPPERCASE:</U>
             <div id="uppercase"></div>
-            lowercase:
+            <U style="color:  rgb(27, 45, 100);
+    font-weight: bold;">lowercase:</U>
             <div id="lowercase"></div>
-            Characters:
+            <U style="color:  rgb(27, 45, 100);
+    font-weight: bold;">Characters:</U>
             <div id="count"></div>
         </div>
-        <button id="clrbtn">Clear</button>
-        <button id="copybtn">Copy uppercase</button>
+        <button onclick="clearall()">Clear</button>
+        <button onclick="CopyUpper()">Copy uppercase</button>
         <div id="copied"></div>
     </div>
     <script src="./java.js"></script>
