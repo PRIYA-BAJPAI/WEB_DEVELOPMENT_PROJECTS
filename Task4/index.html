@@ -1,0 +1,41 @@
+<!-- Task 4: Simple To-Do Toggle 
+The Scenario: Manage a fixed list of to-do items by marking them complete or incomplete. 
+Requirements: 
+1. Fixed List: Create 5 pre-defined to-do items (e.g., "Buy groceries", "Walk the dog"). 
+2. Click to Complete: 
+○ Clicking item text crosses it out and turns it gray (toggle behavior). 
+3. Completion Counter: Show "Completed: X/5". 
+4. Progress Bar: Implement a visual bar showing the percentage complete (0-100%). 
+5. Bulk Toggles: Buttons to "Mark All" and "Unmark All". 
+Concepts Tested: Toggle classes/styles, counting elements with specific state, percentage 
+calculation. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do Toggle</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="box">
+    <h1>To-Do List</h1>
+    <ul id="list">
+        <li class="item">Buy grocery</li>
+        <li class="item">Walk the Dog</li>
+        <li class="item">Learn DSA</li>
+        <li class="item">Watering Plants</li>
+        <li class="item">Play Badminton</li>
+    </ul>
+    <div id="completion_counter">Completed : 0/5</div>
+
+    <div id="outerbar">
+        <div id="innerbar"></div>
+    </div>
+    <button id="MarkAll">Mark All</button>
+    <button id="UnmarkAll">Unmark All</button>
+    </div>
+    <script src="./java.js"></script>
+</body>
+</html>
