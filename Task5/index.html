@@ -1,0 +1,39 @@
+<!-- Task 5: Button Click Stats 
+The Scenario: Track click statistics for multiple buttons and display the current leader. 
+Requirements: 
+1. Four Buttons: "Red", "Blue", "Green", "Yellow". 
+2. Click Tracking: Show "Color: X clicks" below each button. 
+3. Leader Display: Show "Leader: [color] with X clicks" (or "Tie!" if tied). 
+4. Visual Feedback: The leading button(s) should be visually bigger or highlighted. 
+5. Reset Stats: Button that resets all counts to 0. 
+Concepts Tested: Multiple counters, comparing values to find the maximum, conditional 
+styling. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click Stats</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Button Click Stats</h1>
+    <div class="but">
+        <button id="red">
+            <p id="red-click">Red : 0 clicks</p>
+        </button>
+        <button id="blue">
+            <p id="blue-click">Blue : 0 clicks</p>
+        </button>
+        <button id="green">
+            <p id="green-click">Green : 0 clicks</p>
+        </button>
+        <button id="yellow">
+            <p id="yellow-click">Yellow : 0 clicks</p>
+        </button>
+    </div>
+    <h1 id="leader">Leader: None</h1>
+    <button id="reset">Reset Stats</button>
+    <script src="./java.js"></script>
+</body>
+</html>
