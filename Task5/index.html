@@ -17,23 +17,25 @@ styling. -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="container">
     <h1>Button Click Stats</h1>
     <div class="but">
-        <button id="red">
-            <p id="red-click">Red : 0 clicks</p>
-        </button>
-        <button id="blue">
-            <p id="blue-click">Blue : 0 clicks</p>
-        </button>
-        <button id="green">
-            <p id="green-click">Green : 0 clicks</p>
-        </button>
-        <button id="yellow">
-            <p id="yellow-click">Yellow : 0 clicks</p>
-        </button>
+    <div class="item">
+        <button id="red" onclick="clicked('red')">Red</button><p id="red-click">Red : 0 clicks</p>
+        </div>
+    <div class="item">
+        <button id="blue" onclick="clicked('blue')">Blue</button><p id="blue-click">Blue : 0 clicks</p>
+    </div>
+    <div class="item">
+        <button id="green" onclick="clicked('green')">Green</button><p id="green-click">Green : 0 clicks</p>
+    </div>
+    <div class="item">
+        <button id="yellow" onclick="clicked('yellow')">Yellow</button><p id="yellow-click">Yellow : 0 clicks</p>
+    </div>
     </div>
     <h1 id="leader">Leader: None</h1>
-    <button id="reset">Reset Stats</button>
+    <button id="reset" onclick="resetAll()">Reset Stats</button>
+    </div>
     <script src="./java.js"></script>
 </body>
 </html>
