@@ -1,0 +1,38 @@
+<!-- Task 6: Image Switcher 
+The Scenario: Cycle through a sequence of 5 visual states using navigation controls. 
+Requirements: 
+1. Image Display: One large div showing the current "image" (use colored backgrounds as 
+fake images). 
+2. Navigation: "Previous" and "Next" buttons. 
+3. Limits: 
+○ "Previous" disabled when on the first state. 
+○ "Next" disabled when on the last state. 
+4. Image Counter: Show "Image N of 5". 
+5. Indicators: Show 5 dot indicators, with the current one highlighted. 
+6. Jump Controls: Buttons to "Jump to First" and "Jump to Last". 
+Concepts Tested: Array navigation, index tracking, conditional enabling/disabling of controls.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Switcher</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Image Switcher</h1>
+        <div id="image_box"></div>
+        <div id="counter">Image 1 of 5</div>
+
+        <button id="first">Jump to First</button>
+        <button id="Previous">Previous</button>
+        <button id="Next">Next</button>
+        <button id="last">Jump to Last</button>
+
+        <div id="dot"></div>
+    </div>
+    <script src="./java.js"></script>
+</body>
+</html>
